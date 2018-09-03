@@ -13,14 +13,14 @@ How To Use:
 
 4. After getting the checksum hash add the plugin to your currnet project by:
 
-cordova plugin add https://github.com/narendra-ct/Cordova-Paytm-Plugin.git --variable MERCHANT_ID=xxxxxxxxx --variable INDUSTRY_TYPE_ID=xxxxxx --variable CHANNEL_ID=xxx --variable WEBSITE=xxxxx
+cordova plugin add https://github.com/kapilkarda/Cordova-Paytm-Plugin.git --variable MERCHANT_ID=xxxxxxxxx --variable INDUSTRY_TYPE_ID=xxxxxx --variable CHANNEL_ID=xxx --variable WEBSITE=xxxxx
 
 [update xxxxx with actual values (Provided by Paytm)]
 
 5. After Adding the plugin you can make payments by calling following method, make sure you are pssing required parameters in order,
 
 //orderid, cust_id, email, phone, txn_amt,callback_url,checksum_hash,environment
-PaytmPlugin.payWithPaytm('ORDS112', 'CUST001', 'abc@gmail.com', '7777777777', '1', 'https://pguat.paytm.com/paytmchecksum/paytmCallback.jsp', 'uNueM+eqAbZgWLD6aKR6rCk/asvPYuwZjY3u3FgpQw8BFJg/qGmkOeMoHM9Kx5BECdukmtGZ0Iz/tcaCESTe41Zj6VO3k5LGUii=', 'staging', function (success) {
+PaytmPlugin.payWithPaytm('ORDS112', 'CUST001', 'abc@gmail.com', '7777777777', '1', 'http://www.exmple.com/PaytmKit/generateChecksum.php?MID=Engine57819657649623&ORDER_ID=ORDS112', 'uNueM+eqAbZgWLD6aKR6rCk/asvPYuwZjY3u3FgpQw8BFJg/qGmkOeMoHM9Kx5BECdukmtGZ0Iz/tcaCESTe41Zj6VO3k5LGUii=', 'staging', function (success) {
 alert(success);
 }, function (failure) {
 alert(failure);
