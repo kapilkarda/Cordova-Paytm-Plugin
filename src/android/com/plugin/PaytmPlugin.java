@@ -101,7 +101,7 @@ public class PaytmPlugin extends CordovaPlugin {
 
 
 
-    PaytmPGService Service = PaytmPGService.getStagingService();
+    //PaytmPGService Service = PaytmPGService.getStagingService();
 
     //Kindly create complete Map and checksum on your server side and then put it here in paramMap.
     Map<java.lang.String, java.lang.String> paramMap = new HashMap<java.lang.String, java.lang.String>();
